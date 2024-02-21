@@ -3,7 +3,7 @@ import scala.sys.process._
 name := "provider"
 
 ThisBuild / organization := "com.availity"
-ThisBuild / scalaVersion := "2.12.13"
+ThisBuild / scalaVersion := "2.12.15"
 ThisBuild / useCoursier := false
 
 // Assembly settings
@@ -22,7 +22,7 @@ assembly / assemblyMergeStrategy := {
   assembly / test := {}
 
   // Dependencies
-  val sparkVersion = "3.1.1"
+  val sparkVersion = "3.3.1"
 
   libraryDependencies ++= Seq(
       "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
